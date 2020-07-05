@@ -16,7 +16,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_beryllium.mk
+    $(LOCAL_DIR)/omni_polaris.mk
 
 COMMON_LUNCH_CHOICES := \
     omni_beryllium-user \
