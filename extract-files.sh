@@ -18,7 +18,7 @@
 
 set -e
 
-export DEVICE=beryllium
+export DEVICE=polaris
 export VENDOR=xiaomi
 
 export DEVICE_BRINGUP_YEAR=2018
