@@ -22,29 +22,29 @@ $(call inherit-product, vendor/omni/config/gsm.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += device/xiaomi/beryllium/overlay
+DEVICE_PACKAGE_OVERLAYS += device/xiaomi/polaris/overlay
 DEVICE_PACKAGE_OVERLAYS += vendor/omni/overlay/CarrierConfig
 
 # Inherit from our custom product configuration
 $(call inherit-product, vendor/omni/config/common.mk)
 
 # Inherit from hardware-specific part of the product configuration
-$(call inherit-product, device/xiaomi/beryllium/device.mk)
+$(call inherit-product, device/xiaomi/polaris/device.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := omni_beryllium
-PRODUCT_DEVICE := beryllium
+PRODUCT_NAME := omni_polaris
+PRODUCT_DEVICE := polaris
 PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := POCOPHONE F1
+PRODUCT_MODEL := MI MIX 2S
 PRODUCT_MANUFACTURER := Xiaomi
 
-TARGET_DEVICE := beryllium
-PRODUCT_SYSTEM_NAME := beryllium
+TARGET_DEVICE := polaris
+PRODUCT_SYSTEM_NAME := polaris
 
-VENDOR_RELEASE := 10/QKQ1.190828.002/V11.0.8.0.QEJMIXM:user/release-keys
-BUILD_FINGERPRINT := Xiaomi/beryllium/beryllium:$(VENDOR_RELEASE)
-OMNI_BUILD_FINGERPRINT := Xiaomi/beryllium/beryllium:$(VENDOR_RELEASE)
-OMNI_PRIVATE_BUILD_DESC := "'beryllium-user 10 QKQ1.190828.002 V11.0.8.0.QEJMIXM release-keys'"
+VENDOR_RELEASE := 10/QKQ1.190828.002/V11.0.5.0.QDGMIXM:user/release-keys
+BUILD_FINGERPRINT := Xiaomi/polaris/polaris:$(VENDOR_RELEASE)
+OMNI_BUILD_FINGERPRINT := Xiaomi/polaris/polaris:$(VENDOR_RELEASE)
+OMNI_PRIVATE_BUILD_DESC := "'polaris 10 QKQ1.190828.002 V11.0.5.0.QDGMIXM user release-keys'"
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi-rev1
-PLATFORM_SECURITY_PATCH_OVERRIDE := 2020-04-01
+PLATFORM_SECURITY_PATCH_OVERRIDE := 2020-05-01
