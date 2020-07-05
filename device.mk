@@ -22,7 +22,7 @@
 #
 
 # Get non-open-source specific aspects
-$(call inherit-product, vendor/xiaomi/beryllium/beryllium-vendor.mk)
+$(call inherit-product, vendor/xiaomi/polaris/polaris-vendor.mk)
 
 # Api
 PRODUCT_SHIPPING_API_LEVEL := 28
