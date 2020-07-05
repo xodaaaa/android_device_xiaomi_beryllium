@@ -25,7 +25,7 @@ BOARD_VENDOR := xiaomi
 
 BUILD_BROKEN_DUP_RULES := true
 
-DEVICE_PATH := device/xiaomi/beryllium
+DEVICE_PATH := device/xiaomi/polaris
 
 # Architecture
 TARGET_ARCH := arm64
@@ -49,7 +49,7 @@ TARGET_BOOTLOADER_BOARD_NAME := sdm845
 TARGET_NO_BOOTLOADER := true
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := beryllium
+TARGET_OTA_ASSERT_DEVICE := polaris
 
 # Kernel
 BOARD_KERNEL_BASE := 0x00000000
@@ -61,7 +61,7 @@ BOARD_KERNEL_TAGS_OFFSET := 0x00000100
 BOARD_RAMDISK_OFFSET := 0x01000000
 NEED_KERNEL_MODULE_SYSTEM := true
 TARGET_KERNEL_ARCH := arm64
-TARGET_KERNEL_CONFIG := omni_beryllium_defconfig
+TARGET_KERNEL_CONFIG := omni_polaris_defconfig
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sdm845
 TARGET_KERNEL_CLANG_COMPILE := true
 BOARD_ROOT_EXTRA_FOLDERS := odm
@@ -172,4 +172,4 @@ BOARD_USES_SNAPDRAGONCAMERA_VERSION := 2
 BOARD_VNDK_VERSION := current
 
 # Inherit from the proprietary version
--include vendor/xiaomi/beryllium/BoardConfigVendor.mk
+-include vendor/xiaomi/polaris/BoardConfigVendor.mk
