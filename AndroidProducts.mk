@@ -19,6 +19,6 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/omni_polaris.mk
 
 COMMON_LUNCH_CHOICES := \
-    omni_beryllium-user \
-    omni_beryllium-userdebug \
-    omni_beryllium-eng
+    omni_polaris-user \
+    omni_polaris-userdebug \
+    omni_polaris-eng
