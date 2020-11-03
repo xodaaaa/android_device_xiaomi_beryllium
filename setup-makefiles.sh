@@ -7,7 +7,7 @@
 
 set -e
 
-export DEVICE=beryllium
+export DEVICE=polaris
 export VENDOR=xiaomi
 
 INITIAL_COPYRIGHT_YEAR=2018
@@ -29,7 +29,7 @@ fi
 setup_vendor "$DEVICE" "$VENDOR" "$LINEAGE_ROOT" true
 
 # Copyright headers and guards
-write_headers "beryllium"
+write_headers "polaris"
 
 # The standard common blobs
 write_makefiles "$MY_DIR"/proprietary-files.txt true
