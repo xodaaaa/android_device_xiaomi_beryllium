@@ -14,4 +14,4 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_beryllium.mk
+    $(LOCAL_DIR)/omni_polaris.mk
